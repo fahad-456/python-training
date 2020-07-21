@@ -1,0 +1,10 @@
+#l1=[87,86,89,65,43,23]
+#final_list=list(filter(lambda x:(x%2==0),l1))
+#print(final_list)
+
+def palindrome(l1):
+    final_list=list(filter(lambda x:(x=="".join(reversed(x))),l1))
+    print(final_list)
+
+l1=["pap","abc","aca"]
+palindrome(l1)
